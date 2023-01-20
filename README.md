@@ -18,7 +18,7 @@ npm run build
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-```ts
+```
 class Conctrete => Template -> ITemplate 
 	+ name: string
 	+ publicFunction(): void
