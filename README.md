@@ -19,14 +19,14 @@ npm run build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
-```js
+```ts
 // TemplateClass 作为既定的模板类
 CLASS TemplateClass
 	// 为子类提供了既定的模板方法 templateMethod()
 	+ templateMethod() { if(...) { this.realizableFunctionA(); } else ... }
-	# realizableFunctionA() { / }
-	- realizableFunctionB() { / }
-	- realizableFunctionC() { / }
+	# & = realizableFunctionA()
+	- $ . realizableFunctionB()
+	- realizableFunctionC()
 
 // 子类继承 TemplateClass，选择性实现父类提供的抽象函数
 CLASS ConcreteClassA => TemplateClass
