@@ -18,10 +18,10 @@ npm run build
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-```mermaid
-classDiagram
-class TemplateClass {
-	+abstract ()
-	+templateMethod()
-}
+```ts
+class Conctrete => Template -> ITemplate 
+	+ name: string
+	+ publicFunction(): void
+	# protectedFunction() {...}
+	- privateFunction() { \ }
 ```
